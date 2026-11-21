@@ -341,8 +341,8 @@ export default function App() {
           <p>{t("foot_note")}</p>
         </div>
       </footer>
-      <a href={WHATSAPP} target="_blank" rel="noopener noreferrer" aria-label={lang === "ar" ? "تواصل عبر واتساب" : "Chat on WhatsApp"} className="wa-glow fixed bottom-5 left-5 z-40 grid size-14 place-items-center rounded-full bg-[#25D366] text-white transition-transform hover:scale-110 focus-visible:scale-110">
-        <svg viewBox="0 0 24 24" className="size-7" fill="currentColor" aria-hidden="true"><path d={WA_PATH} /></svg><span className="sr-only">{t("ext_new")}</span>
+      <a href={WHATSAPP} target="_blank" rel="noopener noreferrer" aria-label={lang === "ar" ? "تواصل عبر واتساب" : "Chat on WhatsApp"} className="wa-glow fixed bottom-5 left-5 z-40 grid size-11 place-items-center rounded-full bg-[#25D366] text-white transition-transform hover:scale-110 focus-visible:scale-110">
+        <svg viewBox="0 0 24 24" className="size-6" fill="currentColor" aria-hidden="true"><path d={WA_PATH} /></svg><span className="sr-only">{t("ext_new")}</span>
       </a>
       <a href="#hero" aria-label={t("aria_top")} className={cn("fixed bottom-5 right-5 z-40 grid size-11 place-items-center rounded-full border border-border bg-surface shadow-lg transition", scrolled ? "opacity-100" : "pointer-events-none opacity-0")}><ArrowUpRight className="size-5 -rotate-45" /></a>
     </MotionConfig>
