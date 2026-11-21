@@ -305,15 +305,15 @@ export default function App() {
 
         {/* CONTACT */}
         <Section id="contact">
-          <div className="relative overflow-hidden rounded-[2rem] border border-border bg-surface/70 px-6 py-16 text-center sm:px-12 sm:py-24">
+          <div className="relative overflow-hidden rounded-[2rem] border border-border bg-surface/70 px-4 py-16 text-center sm:px-12 sm:py-24">
             <div className="pointer-events-none absolute inset-x-0 -top-24 mx-auto size-[420px] rounded-full bg-brand/30 blur-[120px]" />
             <div className="relative">
               <Eyebrow n="09">{t("contact_eyebrow")}</Eyebrow>
               <Heading text={t("cta_title")} className="mx-auto max-w-3xl sm:text-7xl" />
               <BlurFade inView><p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground">{t("cta_desc")}</p></BlurFade>
-              <BlurFade inView><a href={`mailto:${EMAIL}`} className="mt-8 inline-block"><ShimmerButton shimmerColor="#7be3f5" background="linear-gradient(135deg,#25bddc,#0892b1 60%,#067490)" className="h-14 px-9 text-base font-semibold shadow-xl shadow-brand/30">{t("cta_btn")}: {EMAIL}</ShimmerButton></a></BlurFade>
+              <BlurFade inView><a href={`mailto:${EMAIL}`} className="mt-8 inline-block"><ShimmerButton shimmerColor="#7be3f5" background="linear-gradient(135deg,#25bddc,#0892b1 60%,#067490)" className="h-14 px-10 text-base font-semibold shadow-xl shadow-brand/30">{t("cta_btn")}</ShimmerButton></a></BlurFade>
               <BlurFade inView><dl className="mx-auto mt-12 grid max-w-3xl gap-4 text-start sm:grid-cols-2">
-                {[["c_loc", t("exp_loc1")], ["c_email", EMAIL], ["c_avail", t("hero_badge")], ["c_langs", t("skill_langs")]].map(([k, v]) => <div key={k} className="rounded-2xl border border-border bg-background/60 p-4"><dt className="text-xs text-muted-foreground">{t(k)}</dt><dd className="mt-1 font-medium">{v}</dd></div>)}
+                {[["c_loc", t("exp_loc1")], ["c_email", EMAIL], ["c_avail", t("hero_badge")], ["c_langs", t("skill_langs")]].map(([k, v]) => <div key={k} className="rounded-2xl border border-border bg-background/60 p-4"><dt className="text-xs text-muted-foreground">{t(k)}</dt><dd className="mt-1 font-medium [overflow-wrap:anywhere] sm:[overflow-wrap:normal]">{v}</dd></div>)}
               </dl></BlurFade>
             </div>
             <BorderBeam size={260} duration={12} colorFrom="#3cc1da" colorTo="#0892b1" />
