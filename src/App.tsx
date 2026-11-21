@@ -330,8 +330,6 @@ export default function App() {
             <p>{t("footer_copy")}</p>
           </div>
           <div className="flex flex-wrap gap-x-6 gap-y-2">
-            <a className="hover:text-foreground" href={`${import.meta.env.BASE_URL}legal/privacy-policy.html`}>{t("foot_privacy")}</a>
-            <a className="hover:text-foreground" href={`${import.meta.env.BASE_URL}legal/terms-of-use.html`}>{t("foot_terms")}</a>
             <a className="hover:text-foreground" href={BEHANCE} target="_blank" rel="noopener noreferrer">Behance{ext}</a>
             <a className="hover:text-foreground" href={PHOTOS} target="_blank" rel="noopener noreferrer">Photography{ext}</a>
             <a className="hover:text-foreground" href={VIDEO} target="_blank" rel="noopener noreferrer">Video{ext}</a>
